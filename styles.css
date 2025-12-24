@@ -1,9 +1,9 @@
 body {
-  background-color: lightgrey;
+  background-color: #121212;
 }
 
 header {
-            background-color: #1E90FF; /* Set your header color here */
+            background-color: #1e1e1e; /* Set your header color here */
             height: 70px; 
             padding: 0 20px;
             
