@@ -76,7 +76,7 @@ video
 	object-position: center;
 }
 
-/* Navigation */
+/*Page Navigation*/
 .topnav
 {
 	position: relative;
@@ -101,5 +101,10 @@ video
 		.topnav a:hover
 		{
 			background-color: rgba(255, 255, 255, 0.15);
-			color:var(--white);
+			color: var(--white);
+		}
+
+		.topnav a:active
+		{
+			color: var(--white);
 		}
