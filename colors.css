@@ -1,0 +1,35 @@
+:root
+{
+	--white: #ffffff;
+	--white50: #ffffff80;
+	--white25: #ffffff40;
+
+	--gray1: #121212;
+	--gray2: #1e1e1e;
+	--gray3: #2e2e2e;
+	--gray4: #363636;
+
+	--green1: #004C00;
+	--green2: #00E639;
+	--green3: #00AA00;
+}
+
+
+/*background #121212
+blue #001BE6
+blue-dark #000047
+blue-light #0000AA
+green #00E639
+green-dark #004C00
+green-light #00AA00
+on-background #FFFFFF
+orange #803300FF
+red #E6000B
+red-dark #470000
+red-light #AA0000
+surface #1E1E1E
+white-25 #FFFFFF40
+white-50 #FFFFFF80
+yellow #E6B000
+yellow-dark #4C3A00
+yellow-light #A88100*/
