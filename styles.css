@@ -3,11 +3,8 @@ body {
 }
 
 header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             background-color: #1E90FF; /* Set your header color here */
-            height: 70px; /* Set the header height */
+            height: 70px; 
             padding: 0 20px;
-            box-sizing: border-box;
+            
 }
