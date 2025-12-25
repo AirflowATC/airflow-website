@@ -28,5 +28,11 @@
 		"name": "pilotw09",
 		"position": "SLC_APP",
 		"score": 870
+	},
+	{
+		"rank": 6,
+		"name": "ben",
+		"position": "EUG_APP",
+		"score": 100
 	}
 ]

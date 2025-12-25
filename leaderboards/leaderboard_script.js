@@ -26,44 +26,6 @@ async function fetchRegionEntries()
     }
 }
 
-function getRegionEntries()
-{
-    const data = [
-        {
-            "rank": 1,
-            "name": "Ethan",
-            "position": "SEA_APP",
-            "score": 1515
-        },
-        {
-            "rank": 2,
-            "name": "mmiller",
-            "position": "HOU_APP",
-            "score": 1203
-        },
-        {
-            "rank": 3,
-            "name": "MadHenn",
-            "position": "PDX_APP",
-            "score": 920
-        },
-        {
-            "rank": 4,
-            "name": "squidy",
-            "position": "GEG_APP",
-            "score": 901
-        },
-        {
-            "rank": 5,
-            "name": "pilotw09",
-            "position": "SLC_APP",
-            "score": 870
-        }
-    ];
-
-    return data;
-}
-
 function populateRegionTable(data)
 {
     const body = document.getElementById('regionTableBody')
@@ -86,6 +48,5 @@ function populateRegionTable(data)
 async function loadRegionLeaderboard()
 {
     const data = await fetchRegionEntries();
-    //const data = getRegionEntries();
     populateRegionTable(data);
 }
