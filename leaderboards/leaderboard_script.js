@@ -10,12 +10,12 @@ async function fetchRegionEntries()
 
         console.log(data);
 
-        ////Check if data is an array
-        //if (!Array.isArray(data))
-        //{
-        //    console.error("JSON data is not an array");
-        //    return [];
-        //}
+        //Ensure data is an array
+        if (!Array.isArray(data))
+        {
+            console.error("JSON data is not an array");
+            return [];
+        }
 
         return data;
     }
@@ -85,7 +85,7 @@ function populateRegionTable(data)
 
 async function loadRegionLeaderboard()
 {
-    //const data = await fetchRegionEntries();
-    const data = getRegionEntries();
+    const data = await fetchRegionEntries();
+    //const data = getRegionEntries();
     populateRegionTable(data);
 }
