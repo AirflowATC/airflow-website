@@ -26,27 +26,66 @@ async function fetchRegionEntries()
     }
 }
 
+function getRegionEntries()
+{
+    const data = [
+        {
+            "rank": 1,
+            "name": "Ethan",
+            "position": "SEA_APP",
+            "score": 1515
+        },
+        {
+            "rank": 2,
+            "name": "mmiller",
+            "position": "HOU_APP",
+            "score": 1203
+        },
+        {
+            "rank": 3,
+            "name": "MadHenn",
+            "position": "PDX_APP",
+            "score": 920
+        },
+        {
+            "rank": 4,
+            "name": "squidy",
+            "position": "GEG_APP",
+            "score": 901
+        },
+        {
+            "rank": 5,
+            "name": "pilotw09",
+            "position": "SLC_APP",
+            "score": 870
+        }
+    ];
+
+    return data;
+}
+
 function populateRegionTable(data)
 {
-    const tbody = document.querySelector('#airportTable tbody');
+    const body = document.getElementById('regionTableBody')
 
     data.forEach(item =>
     {
         const row = document.createElement('tr');
 
         row.innerHTML = `
+                    <td>${item.rank}</td>
                     <td>${item.name}</td>
-                    <td>${item.city}</td>
-                    <td>${item.traffic}</td>
+                    <td>${item.position}</td>
+                    <td>${item.score}</td>
                   `;
 
-        tbody.appendChild(row);
+        body.appendChild(row);
     });
 }
 
 async function loadRegionLeaderboard()
 {
-    const data = await fetchRegionEntries();
-    console.log(data);
-    //populateRegionTable(data);
+    //const data = await fetchRegionEntries();
+    const data = getRegionEntries();
+    populateRegionTable(data);
 }
