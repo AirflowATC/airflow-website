@@ -25,6 +25,11 @@ header
 	width: 100%;
 }
 
+.section_page
+{
+	padding:32px;
+}
+
 .overlay
 {
 	position: absolute; /* sits on top of video */
@@ -156,4 +161,43 @@ th
 .leaderboard_table
 {
 	width:100%;
+}
+
+/*News*/
+
+.news-feed
+{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.news-item
+{
+	display: flex;
+	align-items: flex-start;
+	padding: 10px 0;
+}
+
+.news-date
+{
+	color: var(--white25);
+	margin-right: 1em;
+}
+
+.news-text
+{
+	flex: 1;
+	color: var(--white25);
+	font-weight: bold;
+}
+
+.news-item + .news-item
+{
+	border-top: 1px solid var(--gray2);
+}
+
+/*Footer*/
+.footer
+{
+	height: 64px;
 }
