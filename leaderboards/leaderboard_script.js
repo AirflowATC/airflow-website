@@ -1,3 +1,5 @@
+const useTestData = false;
+
 async function fetchRegionEntries()
 {
     const category = "REGION";
@@ -5,10 +7,8 @@ async function fetchRegionEntries()
 
     try
     {
-        const rsp = await fetch('region_entries.json');
+        const rsp = await fetch('./region_entries.json');
         const data = await rsp.json();
-
-        console.log(data);
 
         //Ensure data is an array
         if (!Array.isArray(data))
@@ -24,6 +24,44 @@ async function fetchRegionEntries()
         console.error("Failed to load JSON: ", err);
         return [];
     }
+}
+
+function getRegionEntries()
+{
+    const data = [
+        {
+            "rank": 1,
+            "name": "Ethan",
+            "position": "SEA_APP",
+            "score": 1515
+        },
+        {
+            "rank": 2,
+            "name": "mmiller",
+            "position": "HOU_APP",
+            "score": 1203
+        },
+        {
+            "rank": 3,
+            "name": "MadHenn",
+            "position": "PDX_APP",
+            "score": 920
+        },
+        {
+            "rank": 4,
+            "name": "squidy",
+            "position": "GEG_APP",
+            "score": 901
+        },
+        {
+            "rank": 5,
+            "name": "pilotw09",
+            "position": "SLC_APP",
+            "score": 870
+        }
+    ];
+
+    return data;
 }
 
 function populateRegionTable(data)
@@ -47,6 +85,12 @@ function populateRegionTable(data)
 
 async function loadRegionLeaderboard()
 {
-    const data = await fetchRegionEntries();
+    let data;
+
+    if (useTestData)
+        data = getRegionEntries();
+    else
+        data = await fetchRegionEntries();
+
     populateRegionTable(data);
 }
