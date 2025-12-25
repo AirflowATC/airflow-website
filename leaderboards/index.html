@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<link rel="icon" href="./res/images/logo_tower_512.png">
-<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="../res/images/logo_tower_512.png">
+<link rel="stylesheet" href="../styles.css">
 
 <html>
 
@@ -12,23 +12,40 @@
 <body>
 
 	<!--Navigation-->
-	<div class="topnav">
-		<nav>
+	<div class="nav_banner">
 
-			<a>
-				<img src="./res/images/logo_512.png"
-					 style="height:64px;" />
-			</a>
-			<a href="./leaderboards.html">Leaderboards</a>
+		<a href="../index.html">
+			<img src="../res/images/logo_512.png"
+				 alt="Airflow Logo"
+				 style="height:64px;" />
+		</a>
+
+		<div class="nav_button_stack">
+			<a href="index.html">Leaderboards</a>
 			<a href="#features">Features</a>
 			<a href="#docs">Docs</a>
 			<a href="#download">Download</a>
-		</nav>
+		</div>
+
 	</div>
 
+	<!--Page-->
+	<div class="page">
 
+		<h1>Leaderboards</h1>
 
-	<h1>Leaderboards</h1>
+		<table id="entryTable">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Name</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+	</div>
 
 </body>
 

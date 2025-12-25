@@ -20,23 +20,6 @@ header
 	padding: 0 20px;
 }
 
-.nav_button
-{
-	color: var(--white50);
-	background-color: var(--green1);
-	border: 0px;
-	border-radius: 16px;
-	padding: 16px;
-	text-decoration: none;
-	transition: background 0.2s ease, color 0.2s ease;
-}
-
-	.nav_button:hover
-	{
-		background-color: var(--green2);
-		color: var(--white);
-	}
-
 .section
 {
 	width: 100%;
@@ -45,8 +28,7 @@ header
 .overlay
 {
 	position: absolute; /* sits on top of video */
-	inset: 0; /* top:0 right:0 bottom:0 left:0 */
-	z-index: 2;
+	inset: 0;
 }
 
 .centerStack
@@ -64,6 +46,8 @@ header
 
 .video-container
 {
+	position: relative;
+	display: inline-block;
 	height: 100%;
 	overflow: hidden;
 }
@@ -76,19 +60,39 @@ video
 	object-position: center;
 }
 
-/*Page Navigation*/
-.topnav
+.nav_button
 {
-	position: relative;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 64px;
-	padding: 0 24px;
-	z-index: 10;
+	color: var(--white50);
+	background-color: var(--green1);
+	border: 0px;
+	border-radius: 16px;
+	padding: 16px;
+	text-decoration: none;
+	transition: background 0.2s ease, color 0.2s ease;
 }
 
-	.topnav a
+	.nav_button:hover
+	{
+		background-color: var(--green2);
+		color: var(--white);
+	}
+
+/*Navigation*/
+.nav_banner
+{
+	padding: 16px;
+	display: flex;
+	height: 64px;
+	align-items: center;
+	z-index: 500;
+}
+
+.nav_button_stack
+{
+	margin-left: auto;
+}
+
+	.nav_button_stack a
 	{
 		color: var(--white25);
 		text-decoration: none;
@@ -98,13 +102,41 @@ video
 		transition: background 0.2s ease, color 0.2s ease;
 	}
 
-		.topnav a:hover
+		.nav_button_stack a:hover
 		{
 			background-color: rgba(255, 255, 255, 0.15);
 			color: var(--white);
 		}
 
-		.topnav a:active
+		.nav_button_stack a:active
 		{
 			color: var(--white);
 		}
+
+/*Page*/
+.page
+{
+	margin: 64px;
+	padding: 16px;
+	/*background-color:red;*/
+	border-radius: 32px;
+}
+
+/*Table*/
+table
+{
+	background-color: transparent;
+	border-collapse: collapse;
+}
+
+th, td
+{
+	border: 1px solid var(--gray2);
+	padding: 8px 12px;
+	text-align: left;
+}
+
+th
+{
+	/*background-color: #f4f4f4;*/
+}

@@ -11,25 +11,34 @@
 
 <body>
 
-	<!--Navigation-->
-	<nav class="topnav">
-		<a href="./leaderboards/index.html">Leaderboards</a>
-		<a href="#features">Features</a>
-		<a href="#docs">Docs</a>
-		<a href="#download">Download</a>
-	</nav>
+	<div class="videoContainer">
 
-	<!--Main Logo/Download-->
-	<div class="section videoContainer">
+		<!--Radar Video-->
+		<div class="section">
 
-		<video autoplay muted loop
-			   style="height:100vh;">
-			<source src="res/videos/primary_blip_sweep.mp4" type="video/mp4">
-			Your browser does not support the video tag.
-		</video>
+			<video autoplay muted loop
+				   style="height:100vh;">
+				<source src="res/videos/primary_blip_sweep.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 
-		<div class="overlay centerStack"
-			 style="justify-content:center;">
+		</div>
+
+		<!--Navigation-->
+		<div class="overlay nav_banner">
+
+			<div class="nav_button_stack">
+				<a href="./leaderboards/index.html">Leaderboards</a>
+				<a href="#features">Features</a>
+				<a href="#docs">Docs</a>
+				<a href="#download">Download</a>
+			</div>
+
+		</div>
+
+		<!--Logo/Download Button-->
+		<div class="overlay"
+			 style="height:100%; display:flex; align-items:center; justify-content:center;">
 
 			<div class="centerStack">
 
@@ -40,7 +49,7 @@
 
 				<h2 class="slogan">Test your skills at the world’s busiest airspaces in this air traffic control (ATC) simulator.</h2>
 
-				<a class="nav_button">Download</a>
+				<a href="./leaderboards/index.html" class="nav_button">Download</a>
 
 			</div>
 
