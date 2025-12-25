@@ -44,6 +44,11 @@ header
 	text-align: center;
 }
 
+.drop_shadow
+{
+	filter: drop-shadow(0px 0px 8px #000);
+}
+
 .video-container
 {
 	position: relative;
@@ -117,26 +122,38 @@ video
 .page
 {
 	margin: 64px;
-	padding: 16px;
-	/*background-color:red;*/
+	padding: 32px;
+	background-color: var(--gray2);
 	border-radius: 32px;
+	box-shadow: 0 0 8px 8px #00000040;
 }
+
+	.page h1
+	{
+		margin: 0 0 16px 0;
+	}
 
 /*Table*/
 table
 {
 	background-color: transparent;
 	border-collapse: collapse;
+	text-align: center;
 }
 
 th, td
 {
-	border: 1px solid var(--gray2);
-	padding: 8px 12px;
-	text-align: left;
+	border: 1px solid var(--gray3);
+	padding: 0.5em;
+	text-align: center;
 }
 
 th
 {
-	/*background-color: #f4f4f4;*/
+	background-color: var(--gray1);
+}
+
+.leaderboard_table
+{
+	width:100%;
 }
