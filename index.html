@@ -2,6 +2,7 @@
 
 <link rel="icon" href="./res/images/logo_tower_512.png">
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <html>
 
@@ -14,7 +15,7 @@
 	<div class="videoContainer">
 
 		<!--Radar Video-->
-		<div class="section">
+		<div style="width:100%;">
 
 			<video autoplay muted loop
 				   style="height:100vh;">
@@ -29,9 +30,20 @@
 
 			<div class="nav_button_stack">
 				<a href="/leaderboards/">Leaderboards</a>
-				<a href="#features">Features</a>
-				<a href="#docs">Docs</a>
-				<a href="#download">Download</a>
+				<a href="">Features</a>
+				<a href="">News</a>
+				<a href="/download/">Download</a>
+
+				<a class="dropdown">
+					Dropdown
+					<i class="fa fa-caret-down"></i>
+
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</a>
 			</div>
 
 		</div>
@@ -46,12 +58,12 @@
 				<a>
 					<img src="./res/images/logo_512.png"
 						 class="drop_shadow"
-						 style="width: 512px;"/>
+						 style="width: 512px;" />
 				</a>
 
 				<h2 class="slogan drop_shadow">Test your skills at the world’s busiest airspaces in this air traffic control (ATC) simulator.</h2>
 
-				<a href="./leaderboards/index.html" class="nav_button">Download</a>
+				<a href="/download/" class="nav_button">Download</a>
 
 			</div>
 
@@ -59,43 +71,135 @@
 
 	</div>
 
-	<!--News-->
-	<div class="page"
-		 id="news">
+	<div class="vertical_stack">
 
-		<div class="news-feed">
+		<!--News-->
+		<div class="row"
+			 id="news">
 
-			<h2>News</h2>
+			<div class="news-feed">
 
-			<div class="news-item">
-				<div class="news-date">2025-12-25</div>
-				<div class="news-text">Welcome to our new website! We are excited to share updates with you.</div>
+				<h1>News</h1>
+
+				<div class="news-item">
+					<div class="news-date">2025-12-25</div>
+					<div class="news-text">Welcome to our new website! We are excited to share updates with you.</div>
+				</div>
+				<div class="news-item">
+					<div class="news-date">2025-12-20</div>
+					<div class="news-text">Our first blog post is live! Check it out to learn more about our projects.</div>
+				</div>
+				<div class="news-item">
+					<div class="news-date">2025-12-15</div>
+					<div class="news-text">We have updated our FAQ section to answer common questions from users.</div>
+				</div>
+				<div class="news-item">
+					<div class="news-date">2025-12-10</div>
+					<div class="news-text">Our mobile app is now available for download on both iOS and Android.</div>
+				</div>
+				<div class="news-item">
+					<div class="news-date">2025-12-01</div>
+					<div class="news-text">Join our newsletter to stay updated on all the latest news and events.</div>
+				</div>
 			</div>
-			<div class="news-item">
-				<div class="news-date">2025-12-20</div>
-				<div class="news-text">Our first blog post is live! Check it out to learn more about our projects.</div>
+
+		</div>
+
+		<!-- Stats -->
+		<div class="row"
+			 style="display:flex;">
+
+			<div class="box">
+				<img src="./res/images/radar_32.png" class="icon" />
+				<h1>2</h1>
+				<p class="label">Regions</p>
 			</div>
-			<div class="news-item">
-				<div class="news-date">2025-12-15</div>
-				<div class="news-text">We have updated our FAQ section to answer common questions from users.</div>
+			<div class="box">
+				<img src="./res/images/tower_32.png" class="icon" />
+				<h1>45</h1>
+				<p class="label">Positions</p>
 			</div>
-			<div class="news-item">
-				<div class="news-date">2025-12-10</div>
-				<div class="news-text">Our mobile app is now available for download on both iOS and Android.</div>
-			</div>
-			<div class="news-item">
-				<div class="news-date">2025-12-01</div>
-				<div class="news-text">Join our newsletter to stay updated on all the latest news and events.</div>
+			<div class="box">
+				<img src="./res/images/departure_32.png" class="icon" />
+				<h1>213</h1>
+				<p class="label">Airlines</p>
 			</div>
 		</div>
 
-	</div>
+		<!--Info-->
+		<h1>Features</h1>
 
-	<!-- Stats -->
-	<div class="section">
-		<div></div>
-		<div></div>
-		<div></div>
+		<div class="row" style=" display: grid; grid-template-columns: auto auto auto; width:75%; gap: 8px;">
+
+
+			<!--Real Airspaces-->
+			<div style="display: flex;">
+
+				<img src="./res/images/star_video_map.png"
+					 class="screenshot" />
+
+				<div style="padding: 0px 16px; ">
+					<h3>Real Airspaces</h3>
+					<p>All maps, coordinates, procedures are based on real FAA data.</p>
+				</div>
+			</div>
+
+			<div style="display: flex;">
+
+				<img src="./res/images/regions_map.png"
+					 class="screenshot" />
+
+				<div style="padding: 0px 16px; ">
+					<h3>Regions</h3>
+					<p>Learn the airspace near you or on the other side of the world. Master an airspace, earn certifications, and become region leader.</p>
+				</div>
+			</div>
+
+			<div style="display: flex;">
+
+				<img src="./res/images/regions_map.png"
+					 class="screenshot" />
+
+				<div style="padding: 0px 16px; ">
+					<h3>Regions</h3>
+					<p>Learn the airspace near you or on the other side of the world. Master an airspace, earn certifications, and become region leader.</p>
+				</div>
+			</div>
+
+			<div style="display: flex;">
+
+				<img src="./res/images/regions_map.png"
+					 class="screenshot" />
+
+				<div style="padding: 0px 16px; ">
+					<h3>Regions</h3>
+					<p>Learn the airspace near you or on the other side of the world. Master an airspace, earn certifications, and become region leader.</p>
+				</div>
+			</div>
+
+			<div style="display: flex;">
+
+				<img src="./res/images/regions_map.png"
+					 class="screenshot" />
+
+				<div style="padding: 0px 16px; ">
+					<h3>Regions</h3>
+					<p>Learn the airspace near you or on the other side of the world. Master an airspace, earn certifications, and become region leader.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Become a Playtester -->
+		<div class="row">
+			<div class="centerStack">
+				<h1>Become a Playtester!</h1>
+				<p>Try the newest features and join the development process.</p>
+				<a href="https://store.steampowered.com/app/1693800/Airflow/" class="nav_button">Learn More</a>
+			</div>
+
+		</div>
+
 	</div>
 
 	<!-- Footer -->

@@ -20,14 +20,30 @@ header
 	padding: 0 20px;
 }
 
-.section
+div
+{
+	margin: 0;
+}
+
+.vertical_stack
+{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	padding:0;
+	gap: 32px;
+}
+
+.row
 {
 	width: 100%;
+	padding: 32px 32px;
+	/*background-color: red;*/
 }
 
 .section_page
 {
-	padding:32px;
+	padding: 32px;
 }
 
 .overlay
@@ -196,8 +212,98 @@ th
 	border-top: 1px solid var(--gray2);
 }
 
+
+
 /*Footer*/
 .footer
 {
 	height: 64px;
+}
+
+.icon
+{
+	filter: opacity(0.25);
+	margin: 16px;
+}
+
+/*Stats*/
+.box
+{
+	flex: 1;
+	text-align: center;
+}
+
+.large_value
+{
+	font-size: 4em;
+	margin:0;
+}
+
+.label
+{
+	font-size: 1em;
+	margin: 0;
+	color: #fff;
+	opacity: 0.25;
+}
+
+.screenshot
+{
+	height: 256px;
+	width: 256px;
+	object-fit: cover;
+	border: 1px solid var(--white12);
+}
+
+/*Dropdown Menu*/
+.navbar
+{
+	/*overflow: hidden;*/
+}
+
+	.navbar a
+	{
+		float: left;
+		font-size: 16px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+.dropdown
+{
+	/*float: left;*/
+	/*overflow: hidden;*/
+}
+
+	.dropdown .dropbtn
+	{
+		border: none;
+		outline: none;
+		font-family: inherit;
+		margin: 0;
+	}
+
+.dropdown-content
+{
+	display: block;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+	.dropdown-content a
+	{
+		float: none;
+		color: black;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
 }
